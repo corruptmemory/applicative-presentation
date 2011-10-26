@@ -1,3 +1,5 @@
 instance Applicative [] where
-  pure = return
-  (<*>) = ap
+  pure a = [a]
+  [] <*> _ = []
+  _ <*> [] = []
+  f:fs <*> l = (map f l) ++ (fs <*> l)
