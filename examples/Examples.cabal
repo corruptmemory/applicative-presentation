@@ -1,0 +1,20 @@
+Name:                Examples
+Version:             0.1
+Synopsis:            Example code for applicative functor talk
+-- Description:
+Homepage:            http://github.com
+License:             BSD3
+License-file:        LICENSE
+Author:              Jim Powers
+Maintainer:          jim@corruptmemory.com
+Copyright:           (c) 2011
+Category:            Education
+Build-type:          Simple
+-- Extra-source-files:
+Cabal-version:       >=1.2
+stability: UNSTABLE
+
+Executable Examples
+  Main-is:              Main.hs
+  hs-source-dirs:       src
+  Build-depends:        base >=4.3 || <4.4, mtl >=2.0

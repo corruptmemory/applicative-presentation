@@ -1,0 +1,28 @@
+digraph {
+  node [shape=box];
+  Functor -> Pointed -> Applicative -> Monad;
+  Pointed [color=grey];
+  Applicative -> Alternative;
+  Monad -> MonadPlus;
+//  Monad -> MonadTrans [style=dotted];
+  Monad -> MonadFix;
+//  {rank=same; Applicative; Alternative}
+//  {rank=same; Monad; MonadPlus}
+  Monoid -> Alternative [style=dotted];
+  Monoid -> MonadPlus [style=dotted];
+  Category -> Arrow -> ArrowChoice;
+  Arrow -> ArrowApply;
+  Arrow -> ArrowLoop;
+  Arrow -> ArrowZero -> ArrowPlus;
+  {rank = same; Arrow; ArrowZero; ArrowPlus}
+  Monoid -> ArrowPlus [style=dotted];
+  Monad -> ArrowApply [style="setlinewidth(4)", arrowtail=normal];
+  Monoid -> Foldable [style=dotted];
+  Monoid -> Monad [style=dotted];
+  Applicative -> Traversable [style=dotted];
+  Foldable -> Traversable;
+  Functor -> Traversable;
+  Comonad [color=grey];
+  Functor -> Comonad;
+//  {rank=same; Comonad; Functor}
+}

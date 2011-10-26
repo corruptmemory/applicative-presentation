@@ -1,0 +1,12 @@
+*.aux
+*.log
+*.nav
+*.snm
+*.toc
+*.out
+*.sublime-project
+*.sublime-workspace
+dotpdf/*.pdf
+examples/dist
+texsrc/*.tex
+texsrc/*.sty

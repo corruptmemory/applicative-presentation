@@ -1,0 +1,1 @@
+traverse id [Just 1, Nothing, Just 2]
